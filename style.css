@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Share+Tech&display=swap");
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base font size and inherit box-sizing behavior */
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #282c34; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #20232a; /* Dark gray */
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  background-color: #61dafb; /* Sky blue */
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: #ffffff; /* White text */
+  text-transform: uppercase;
+  font-family: "Share Tech", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #20232a; /* Dark gray background */
+  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  letter-spacing: 0.2rem;
+}
+
+nav ul li a:hover {
+  color: #61dafb; /* Sky blue hover */
+  transition: 0.1s;
+  text-shadow: 0 0 10px #61dafb, 0 0 20px #61dafb, 0 0 30px #61dafb;
+}
+
+nav ul li .active {
+  color: #61dafb; /* Sky blue active */
+}
+
+#hero {
+  box-sizing: border-box;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20232a; /* Dark gray */
+  padding: 0rem 8vw;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.heropart {
+  width: 50%;
+  padding: 2rem;
+}
+
+.heropart h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  font-family: "Share Tech", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.heropart h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #61dafb; /* Sky blue */
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.heropart a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 1rem;
+  color: #ffffff; /* White text */
+  text-transform: capitalize;
+  font-family: sans-serif;
+  background-color: #61dafb; /* Sky blue */
+  font-weight: bold;
+}
+
+.heropart a:hover {
+  color: #ffffff;
+  background-color: #21a1f1; /* Brighter sky blue on hover */
+  transition: 0.1s;
+  text-shadow: 0 0 10px #21a1f1, 0 0 20px #21a1f1, 0 0 30px #21a1f1;
+}
+
+.heropart h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  font-family: "Share Tech", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.heropart p {
+  font-size: 1rem;
+  color: #ffffff; /* White text */
+  font-family: "Share Tech", sans-serif;
+  letter-spacing: 0.2rem;
+}
+
+.sidebar {
+  position: fixed; /* Position it within the hero section */
+  top: 50%; /* Center it vertically */
+  right: 0; /* Position it on the left */
+  transform: translateY(-50%); /* Adjust for perfect centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Stack icons vertically */
+  background-color: #282c34; /* Dark gray */
+  height: 40vh;
+  width: 4vw;
+  border-radius: 2rem 0 0 2rem;
+  border-left: 2px solid #61dafb; /* Sky blue */
+  border-bottom: 2px solid #61dafb; /* Sky blue */
+  border-top: 2px solid #61dafb; /* Sky blue */
+}
+
+.sidebar a {
+  margin: 0.5rem 0; /* Space between icons */
+}
+
+.sidebar img {
+  width: 30px; /* Size of the icons */
+  height: 30px;
+  transition: transform 0.3s ease; /* Scale effect on hover */
+}
+
+.sidebar img:hover {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #282c34; /* Dark charcoal */
+}
+
+#projects h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #61dafb; /* Sky blue */
+  font-family: "Poppins", sans-serif;
+}
+
+#projectcrousel {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 29vw;
+  height: 40vh;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: #20232a; /* Dark gray */
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.projectcard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.typewriter-container {
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  animation-delay: 0s, 4s;
+  animation-iteration-count: 1, infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #20232a; /* Dark gray */
+  color: #61dafb; /* Sky blue */
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+/* Responsive Styles using Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  #hero {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .heropart {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heropart h1 {
+    font-size: 2.5rem;
+  }
+
+  .heropart h2 {
+    font-size: 1.5rem;
+  }
+
+  .heropart p {
+    font-size: 1rem;
+  }
+
+  #projectcrousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectcard {
+    width: 80vw;
+    height: auto;
+    padding: 1.5rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  #hero {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .heropart {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .heropart h1 {
+    font-size: 2rem;
+  }
+
+  .heropart h2 {
+    font-size: 1.25rem;
+  }
+
+  .heropart p {
+    font-size: 0.875rem;
+  }
+
+  .heropart a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  #projectcrousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectcard {
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+  }
+
+  #projects h2 {
+    font-size: 1.75rem;
+  }
+}
