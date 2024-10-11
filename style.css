@@ -30,7 +30,7 @@ header {
 header img {
   width: 50px;
   height: 50px;
-  background-color: #61dafb; /* Sky blue */
+  background-color: #20232a;
 }
 
 nav ul {
@@ -106,7 +106,7 @@ nav ul li .active {
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   border-radius: 1rem;
-  color: #ffffff; /* White text */
+  color: black;
   text-transform: capitalize;
   font-family: sans-serif;
   background-color: #61dafb; /* Sky blue */
